@@ -151,7 +151,7 @@ odoo.define('AccountingDashboard.AccountingDashboard', function (require) {
                         data: {
                             labels: labels,
                             datasets: [{
-                                label: 'Income', // Name the series
+                                label: 'Ingresos', // Name the series
                                 data: income, // Specify the data values array
                                 backgroundColor: '#66aecf',
                                 borderColor: '#66aecf',
@@ -161,7 +161,7 @@ odoo.define('AccountingDashboard.AccountingDashboard', function (require) {
                                 fill: false
                             },
                                 {
-                                    label: 'Expense', // Name the series
+                                    label: 'Gastos', // Name the series
                                     data: expense, // Specify the data values array
                                     backgroundColor: '#6993d6',
                                     borderColor: '#6993d6',
@@ -171,7 +171,7 @@ odoo.define('AccountingDashboard.AccountingDashboard', function (require) {
                                     fill: false
                                 },
                                 {
-                                    label: 'Profit/Loss', // Name the series
+                                    label: 'Beneficios/Gastos', // Name the series
                                     data: profit, // Specify the data values array
                                     backgroundColor: '#0bd465',
                                     borderColor: '#0bd465',
@@ -229,7 +229,7 @@ odoo.define('AccountingDashboard.AccountingDashboard', function (require) {
                         data: {
                             labels: labels,
                             datasets: [{
-                                label: 'Income', // Name the series
+                                label: 'Ingresos', // Name the series
                                 data: income, // Specify the data values array
                                 backgroundColor: '#66aecf',
                                 borderColor: '#66aecf',
@@ -239,7 +239,7 @@ odoo.define('AccountingDashboard.AccountingDashboard', function (require) {
                                 fill: false
                             },
                                 {
-                                    label: 'Expense', // Name the series
+                                    label: 'Gastos', // Name the series
                                     data: expense, // Specify the data values array
                                     backgroundColor: '#6993d6',
                                     borderColor: '#6993d6',
@@ -249,7 +249,7 @@ odoo.define('AccountingDashboard.AccountingDashboard', function (require) {
                                     fill: false
                                 },
                                 {
-                                    label: 'Profit/Loss', // Name the series
+                                    label: 'Beneficios/Gastos', // Name the series
                                     data: profit, // Specify the data values array
                                     backgroundColor: '#0bd465',
                                     borderColor: '#0bd465',
@@ -310,7 +310,7 @@ odoo.define('AccountingDashboard.AccountingDashboard', function (require) {
                         data: {
                             labels: labels,
                             datasets: [{
-                                label: 'Income', // Name the series
+                                label: 'Ingresos', // Name the series
                                 data: income, // Specify the data values array
                                 backgroundColor: '#66aecf',
                                 borderColor: '#66aecf',
@@ -320,7 +320,7 @@ odoo.define('AccountingDashboard.AccountingDashboard', function (require) {
                                 fill: false
                             },
                                 {
-                                    label: 'Expense', // Name the series
+                                    label: 'Gastos', // Name the series
                                     data: expense, // Specify the data values array
                                     backgroundColor: '#6993d6',
                                     borderColor: '#6993d6',
@@ -330,7 +330,7 @@ odoo.define('AccountingDashboard.AccountingDashboard', function (require) {
                                     fill: false
                                 },
                                 {
-                                    label: 'Profit/Loss', // Name the series
+                                    label: 'Beneficios/Gastos', // Name the series
                                     data: profit, // Specify the data values array
                                     backgroundColor: '#0bd465',
                                     borderColor: '#0bd465',
@@ -429,11 +429,11 @@ odoo.define('AccountingDashboard.AccountingDashboard', function (require) {
                     supplier_invoice_paid_current_year = self.format_currency(currency, supplier_invoice_paid_current_year);
                     supplier_invoice_total_current_year = self.format_currency(currency, supplier_invoice_total_current_year);
 
-                    $('#total_customer_invoice_paid_current_year').append('<div class="logo">' + '<span>' + customer_invoice_paid_current_year + '</span><span>Total Paid<span></div>');
-                    $('#total_customer_invoice_current_year').append('<div" class="logo">' + '<span>' + customer_invoice_total_current_year + '</span><span>Total Invoice <span></div>');
+                    $('#total_customer_invoice_paid_current_year').append('<div class="logo">' + '<span>' + customer_invoice_paid_current_year + '</span><span>Total pagado<span></div>');
+                    $('#total_customer_invoice_current_year').append('<div" class="logo">' + '<span>' + customer_invoice_total_current_year + '</span><span>Total facturado <span></div>');
 
-                    $('#total_supplier_invoice_paid_current_year').append('<div" class="logo">' + '<span>' + supplier_invoice_paid_current_year + '</span><span>Total Paid<span></div>');
-                    $('#total_supplier_invoice_current_year').append('<div" class="logo">' + '<span>' + supplier_invoice_total_current_year + '</span><span>Total Invoice<span></div>');
+                    $('#total_supplier_invoice_paid_current_year').append('<div" class="logo">' + '<span>' + supplier_invoice_paid_current_year + '</span><span>Total pagado<span></div>');
+                    $('#total_supplier_invoice_current_year').append('<div" class="logo">' + '<span>' + supplier_invoice_total_current_year + '</span><span>Total facturado<span></div>');
 
                 })
         },
@@ -509,11 +509,11 @@ odoo.define('AccountingDashboard.AccountingDashboard', function (require) {
                     supplier_invoice_total_current_month = self.format_currency(currency, supplier_invoice_total_current_month);
 
 
-                    $('#total_customer_invoice_paid_current_month').append('<div class="logo">' + '<span>' + customer_invoice_paid_current_month + '</span><span>Total Paid<span></div>');
-                    $('#total_customer_invoice_current_month').append('<div" class="logo">' + '<span>' + customer_invoice_total_current_month + '</span><span>Total Invoice<span></div>');
+                    $('#total_customer_invoice_paid_current_month').append('<div class="logo">' + '<span>' + customer_invoice_paid_current_month + '</span><span>Total pagado<span></div>');
+                    $('#total_customer_invoice_current_month').append('<div" class="logo">' + '<span>' + customer_invoice_total_current_month + '</span><span>Total facturado<span></div>');
 
-                    $('#total_supplier_invoice_paid_current_month').append('<div" class="logo">' + '<span>' + supplier_invoice_paid_current_month + '</span><span>Total Paid<span></div>');
-                    $('#total_supplier_invoice_current_month').append('<div" class="logo">' + '<span>' + supplier_invoice_total_current_month + '</span><span>Total Invoice<span></div>');
+                    $('#total_supplier_invoice_paid_current_month').append('<div" class="logo">' + '<span>' + supplier_invoice_paid_current_month + '</span><span>Total pagado<span></div>');
+                    $('#total_supplier_invoice_current_month').append('<div" class="logo">' + '<span>' + supplier_invoice_total_current_month + '</span><span>Total facturado<span></div>');
 
                 })
         },
@@ -554,7 +554,7 @@ odoo.define('AccountingDashboard.AccountingDashboard', function (require) {
                         data: {
                             labels: labels,
                             datasets: [{
-                                label: 'Income', // Name the series
+                                label: 'Ingresos', // Name the series
                                 data: income, // Specify the data values array
                                 backgroundColor: '#66aecf',
                                 borderColor: '#66aecf',
@@ -564,7 +564,7 @@ odoo.define('AccountingDashboard.AccountingDashboard', function (require) {
                                 fill: false
                             },
                                 {
-                                    label: 'Expense', // Name the series
+                                    label: 'Gastos', // Name the series
                                     data: expense, // Specify the data values array
                                     backgroundColor: '#6993d6',
                                     borderColor: '#6993d6',
@@ -574,7 +574,7 @@ odoo.define('AccountingDashboard.AccountingDashboard', function (require) {
                                     fill: false
                                 },
                                 {
-                                    label: 'Profit/Loss', // Name the series
+                                    label: 'Beneficios/Gastos', // Name the series
                                     data: profit, // Specify the data values array
                                     backgroundColor: '#0bd465',
                                     borderColor: '#0bd465',
@@ -796,7 +796,7 @@ odoo.define('AccountingDashboard.AccountingDashboard', function (require) {
                                 data: {
                                     labels: labels,
                                     datasets: [{
-                                        label: 'Income', // Name the series
+                                        label: 'Ingresos', // Name the series
                                         data: income, // Specify the data values array
                                         backgroundColor: '#66aecf',
                                         borderColor: '#66aecf',
@@ -806,7 +806,7 @@ odoo.define('AccountingDashboard.AccountingDashboard', function (require) {
                                         fill: false
                                     },
                                         {
-                                            label: 'Expense', // Name the series
+                                            label: 'Gastos', // Name the series
                                             data: expense, // Specify the data values array
                                             backgroundColor: '#6993d6',
                                             borderColor: '#6993d6',
@@ -816,7 +816,7 @@ odoo.define('AccountingDashboard.AccountingDashboard', function (require) {
                                             fill: false
                                         },
                                         {
-                                            label: 'Profit/Loss', // Name the series
+                                            label: 'Beneficios/Gastos', // Name the series
                                             data: profit, // Specify the data values array
                                             backgroundColor: '#0bd465',
                                             borderColor: '#0bd465',
@@ -962,11 +962,11 @@ odoo.define('AccountingDashboard.AccountingDashboard', function (require) {
                             supplier_invoice_paid_current_month = self.format_currency(currency, supplier_invoice_paid_current_month);
                             supplier_invoice_total_current_month = self.format_currency(currency, supplier_invoice_total_current_month);
 
-                            $('#total_customer_invoice_paid_current_month').append('<div class="logo">' + '<span>' + customer_invoice_paid_current_month + '</span><span>Total Paid<span></div>');
-                            $('#total_customer_invoice_current_month').append('<div" class="logo">' + '<span>' + customer_invoice_total_current_month + '</span><span>Total Invoice<span></div>');
+                            $('#total_customer_invoice_paid_current_month').append('<div class="logo">' + '<span>' + customer_invoice_paid_current_month + '</span><span>Total pagado<span></div>');
+                            $('#total_customer_invoice_current_month').append('<div" class="logo">' + '<span>' + customer_invoice_total_current_month + '</span><span>Total facturado<span></div>');
 
-                            $('#total_supplier_invoice_paid_current_month').append('<div" class="logo">' + '<span>' + supplier_invoice_paid_current_month + '</span><span>Total Paid<span></div>');
-                            $('#total_supplier_invoice_current_month').append('<div" class="logo">' + '<span>' + supplier_invoice_total_current_month + '</span><span>Total Invoice<span></div>');
+                            $('#total_supplier_invoice_paid_current_month').append('<div" class="logo">' + '<span>' + supplier_invoice_paid_current_month + '</span><span>Total pagado<span></div>');
+                            $('#total_supplier_invoice_current_month').append('<div" class="logo">' + '<span>' + supplier_invoice_total_current_month + '</span><span>Total facturado<span></div>');
 
                         })
                     var arg = 'last_month'
