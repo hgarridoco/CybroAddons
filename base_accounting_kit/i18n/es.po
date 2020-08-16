@@ -766,12 +766,12 @@ msgid ""
 "when created by invoices."
 msgstr ""
 "Marque esto si desea confirmar automáticamente los activos de esta categoría"
-"cuando se crea mediante facturas".
+"cuando se crea mediante facturas."
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_account_asset_category__group_entries
 msgid "Check this if you want to group the generated entries by categories."
-msgstr "Marque esto si desea agrupar las entradas generadas por categorías".
+msgstr "Marque esto si desea agrupar las entradas generadas por categorías."
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_payment__cheque_reference
@@ -808,7 +808,7 @@ msgid ""
 msgstr ""
 "Elija el método que se utilizará para calcular las fechas y el número de entradas. \n"
 "* Número de entradas: corrige el número de entradas y el tiempo entre 2 depreciaciones. \n"
-"* Fecha de finalización: elija el tiempo entre 2 depreciaciones y la fecha en que las depreciaciones no irán más allá".
+"* Fecha de finalización: elija el tiempo entre 2 depreciaciones y la fecha en que las depreciaciones no irán más allá."
 
 #. module: base_accounting_kit
 #: model_terms:ir.actions.act_window,help:base_accounting_kit.action_account_recurring_payments_view
@@ -2739,9 +2739,7 @@ msgstr ""
 msgid ""
 "To remind customers of paying their invoices, you can\n"
 "                        define different actions depending on how severely\n"
-"                        overdue the Total Paid
-
-is. These actions are bundled\n"
+"                        overdue the Total Paid is. These actions are bundled\n"
 "                        into follow-up levels that are triggered when the due\n"
 "                        date of an invoice has passed a certain\n"
 "                        number of days. If there are other overdue invoices for the\n"
