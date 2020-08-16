@@ -748,8 +748,8 @@ odoo.define('AccountingDashboard.AccountingDashboard', function (require) {
 
 
                     $('#toggle-two').bootstrapToggle({
-                        on: 'View All Entries',
-                        off: 'View Posted Entries'
+                        on: 'Ver todos los movimientos',
+                        off: 'Ver todos los movimientos registrados'
                     });
 
 
