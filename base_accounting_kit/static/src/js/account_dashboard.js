@@ -429,7 +429,7 @@ odoo.define('AccountingDashboard.AccountingDashboard', function (require) {
                     supplier_invoice_paid_current_year = self.format_currency(currency, supplier_invoice_paid_current_year);
                     supplier_invoice_total_current_year = self.format_currency(currency, supplier_invoice_total_current_year);
 
-                    $('#total_customer_invoice_paid_current_year').append('<div class="logo">' + '<span>' + customer_invoice_paid_current_year + '</span><span>Total pagado<span></div>');
+                    $('#total_customer_invoice_paid_current_year').append('<div class="logo">' + '<span>' + customer_invoice_paid_current_year + '</span><span>Total cobrado<span></div>');
                     $('#total_customer_invoice_current_year').append('<div" class="logo">' + '<span>' + customer_invoice_total_current_year + '</span><span>Total facturado <span></div>');
 
                     $('#total_supplier_invoice_paid_current_year').append('<div" class="logo">' + '<span>' + supplier_invoice_paid_current_year + '</span><span>Total pagado<span></div>');
