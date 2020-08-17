@@ -509,7 +509,7 @@ odoo.define('AccountingDashboard.AccountingDashboard', function (require) {
                     supplier_invoice_total_current_month = self.format_currency(currency, supplier_invoice_total_current_month);
 
 
-                    $('#total_customer_invoice_paid_current_month').append('<div class="logo">' + '<span>' + customer_invoice_paid_current_month + '</span><span>Total pagado<span></div>');
+                    $('#total_customer_invoice_paid_current_month').append('<div class="logo">' + '<span>' + customer_invoice_paid_current_month + '</span><span>Total cobrado<span></div>');
                     $('#total_customer_invoice_current_month').append('<div" class="logo">' + '<span>' + customer_invoice_total_current_month + '</span><span>Total facturado<span></div>');
 
                     $('#total_supplier_invoice_paid_current_month').append('<div" class="logo">' + '<span>' + supplier_invoice_paid_current_month + '</span><span>Total pagado<span></div>');
@@ -962,7 +962,7 @@ odoo.define('AccountingDashboard.AccountingDashboard', function (require) {
                             supplier_invoice_paid_current_month = self.format_currency(currency, supplier_invoice_paid_current_month);
                             supplier_invoice_total_current_month = self.format_currency(currency, supplier_invoice_total_current_month);
 
-                            $('#total_customer_invoice_paid_current_month').append('<div class="logo">' + '<span>' + customer_invoice_paid_current_month + '</span><span>Total pagado<span></div>');
+                            $('#total_customer_invoice_paid_current_month').append('<div class="logo">' + '<span>' + customer_invoice_paid_current_month + '</span><span>Total cobrado<span></div>');
                             $('#total_customer_invoice_current_month').append('<div" class="logo">' + '<span>' + customer_invoice_total_current_month + '</span><span>Total facturado<span></div>');
 
                             $('#total_supplier_invoice_paid_current_month').append('<div" class="logo">' + '<span>' + supplier_invoice_paid_current_month + '</span><span>Total pagado<span></div>');
